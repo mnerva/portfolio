@@ -19,7 +19,7 @@ a {
     top: 10px;
     left: 50%; /* Centers the navbar horizontally */
     transform: translateX(-50%);
-    background-color: #35312B;
+    background-color: #181716;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -98,6 +98,59 @@ a {
     margin-right: auto;
 }
 
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0E0E0E;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 70%;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.65) 100%);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to bottom, black, black 80%, transparent 100%); /* Horizontal fade */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to bottom, black, black 80%, transparent 100%); /* For Safari */
+    mask-composite: intersect; /* Combines both gradients */
+    -webkit-mask-composite: destination-in;
+}
+
+.hero-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+  
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #D9C5A6;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #e1c699;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #d6b589;
+}
+  
+
 /* Responsive Padding */
 @media (max-width: 941px) {
     .navbar {
@@ -121,6 +174,9 @@ a {
     .dropdown-button {
         transform: translateY(-10%);
     }
+    .hero-image {
+        width: 300px;
+    }
 }
 @media (min-width: 942px) and (max-width: 1279px) {
     .navbar {
@@ -132,6 +188,9 @@ a {
     }
     .nav-list .contact {
         display: none;
+    }
+    .hero-image {
+        width: 400px;
     }
 }
 
@@ -145,5 +204,8 @@ a {
     }
     .nav-list .contact {
         display: none;
+    }
+    .hero-image {
+        width: 500px;
     }
 }
