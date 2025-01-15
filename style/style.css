@@ -115,6 +115,12 @@ a {
         margin-right: auto;
         position: absolute;
     }    
+    .nav-list .logo {
+        transform: translateY(-5%);
+    }
+    .dropdown-button {
+        transform: translateY(-10%);
+    }
 }
 @media (min-width: 942px) and (max-width: 1279px) {
     .navbar {
