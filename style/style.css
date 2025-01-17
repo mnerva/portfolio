@@ -58,7 +58,7 @@ h2 {
     height: 100%;
 }
 
-.nav-list .contact {
+.nav-list .contact-button {
     position: absolute;
     right: 40px;
     top: 50%;
@@ -181,6 +181,9 @@ h2 {
 .box-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    gap: 20px;
+    padding: 2rem;
 }
 
 .box {
@@ -188,6 +191,7 @@ h2 {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .box img {
@@ -197,7 +201,7 @@ h2 {
     display: block;
 }
 
-.box box.overlay{
+.box .overlay{
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
@@ -271,7 +275,7 @@ h2 {
     width: 100%;
     overflow: hidden;
     background-color: #121212;
-    padding: 5px 0;
+    padding-bottom: 10px;
     box-sizing: border-box;
 }
   /* Inner marquee element */
@@ -322,6 +326,51 @@ h2 {
 .touch p {
     padding-bottom: 2rem;
 }
+.contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0E0E0E;
+    padding: 1rem;
+    overflow: hidden;
+} 
+.contact-box {
+    width: 90%;
+    background: #35312B;
+    min-height: 40vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+.contact-box p {
+    padding-top: 1.9rem;
+}
+.contact-box h2 {
+    padding-top: 0.4rem;
+}
+.input-container {
+    width: 100%;
+    gap: 20px;
+}
+input, textarea {
+    background: #635B50;
+    width: 100%;
+    border: none;
+    padding: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder {
+    font-size: 14px;
+}
+input:focus, textarea::focus {
+    outline: none;
+}
+textarea {
+    min-height: 150px;
+}
 
 /* Responsive Padding */
 @media (max-width: 941px) {
@@ -330,7 +379,7 @@ h2 {
         width: 90%;
         padding: 20px 28px 20px;
     }
-    .nav-list > li:not(.contact):not(.dropdown):not(.logo) {
+    .nav-list > li:not(.contact-button):not(.dropdown):not(.logo) {
         display: none; /* Hide all except the contact button and dropdown */
     }
     .nav-list li {
@@ -364,7 +413,7 @@ h2 {
     .nav-list .dropdown {
         display: none;
     }
-    .nav-list .contact {
+    .nav-list .contact-button {
         display: none;
     }
     .hero-image {
@@ -386,7 +435,7 @@ h2 {
     .nav-list .dropdown {
         display: none;
     }
-    .nav-list .contact {
+    .nav-list .contact-button {
         display: none;
     }
     .hero-image {
