@@ -24,17 +24,70 @@
                 <li class="dropdown">
                     <button class="dropdown-button">☰</button>
                     <ul class="dropdown-menu">
-                        <li><a href="index.html">mona.</a></li>
                         <li><a href="projects.html">PROJECTS</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="courses.html">COURSES</a></li>
-                        <li class="contact-button"><a href="contact.html">CONTACT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <img src="./IMG_4975.jpeg" alt="Hero image" class="hero-image">
+            <div class="hero-text">
+                <h1>Mona Nerva</h1>
+              <h2>Software Engineer<br>student</h2>
+              <a href="#about-page" class="cta">about me</a>
+            </div>
+        </section>
+        <section class="about-page" id="about-page">
+            <div class="about-box">
+                <p>MONA NERVA</p>
+                <h2>Software developer</h2>
+                <p>My name is Mona Nerva, and I am an 18-year-old software development student at Tartu Vocational College. I chose this path not only because of my interest in programming but also for the future flexibility it offers, such as the ability to work remotely. Work-life balance is very important to me, and I’m thrilled with the decision I’ve made, encouraged by many friends who are developers. I enjoy continuously learning and evolving in my field. <br><br>
+                    In my spare time, I enjoy reading books, playing music, engaging in charity work and staying active through sports. Music has been a significant part of my life - I studied piano for eight years in music school, and I’ve also taught myself guitar and have been singing my entire life. 
+                </p>
+                <img src="./IMG_4661.jpeg" alt="About box image">
+            </div>
+        </section>
+        <div class="marquee-container">
+            <div class="marquee">
+              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
+              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
+              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
+            </div>
+        </div>
+        <section class="touch">
+            <p>Project in hand?</p>
+            <h1>Let's get in touch!</h1>
+            <p>plaplalpalpalplaplpla</p>
+            <a href="contact.html" class="cta">Get in touch</a>
+        </section>
     </main>
+    <script>
+        // Select the dropdown button and the dropdown menu
+        const dropdownButton = document.querySelector('.dropdown-button');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Toggle the dropdown menu visibility on button click
+        dropdownButton.addEventListener('click', (event) => {
+            // Prevent the event from bubbling up and interfering with other click events
+            event.stopPropagation();
+            
+            // Toggle the dropdown menu
+            const currentDisplay = dropdownMenu.style.display;
+            dropdownMenu.style.display = currentDisplay === 'flex' ? 'none' : 'flex';
+        });
+
+        // Close the dropdown if clicked or touched outside
+        const closeDropdown = () => {
+            dropdownMenu.style.display = 'none'; // Close dropdown if click or touch outside
+        };
+
+        document.addEventListener('click', closeDropdown);
+        document.addEventListener('touchstart', closeDropdown);
+    </script>
 </body>
 </html>

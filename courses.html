@@ -24,11 +24,10 @@
                 <li class="dropdown">
                     <button class="dropdown-button">☰</button>
                     <ul class="dropdown-menu">
-                        <li><a href="index.html">mona.</a></li>
                         <li><a href="projects.html">PROJECTS</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="courses.html">COURSES</a></li>
-                        <li class="contact-button"><a href="contact.html">CONTACT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -36,5 +35,28 @@
     </header>
     <main>
     </main>
+    <script>
+        // Select the dropdown button and the dropdown menu
+        const dropdownButton = document.querySelector('.dropdown-button');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Toggle the dropdown menu visibility on button click
+        dropdownButton.addEventListener('click', (event) => {
+            // Prevent the event from bubbling up and interfering with other click events
+            event.stopPropagation();
+            
+            // Toggle the dropdown menu
+            const currentDisplay = dropdownMenu.style.display;
+            dropdownMenu.style.display = currentDisplay === 'flex' ? 'none' : 'flex';
+        });
+
+        // Close the dropdown if clicked or touched outside
+        const closeDropdown = () => {
+            dropdownMenu.style.display = 'none'; // Close dropdown if click or touch outside
+        };
+
+        document.addEventListener('click', closeDropdown);
+        document.addEventListener('touchstart', closeDropdown);
+    </script>
 </body>
 </html>

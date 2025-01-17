@@ -262,6 +262,9 @@ h2 {
     max-width: 900px;
     text-align: center;
 }
+.text p {
+    padding-bottom: 2rem;
+}
 .text h2 {
     margin-right: auto;
     padding-left: 2rem;
@@ -336,16 +339,11 @@ h2 {
     padding: 1rem;
     overflow: hidden;
 } 
-.contact-box {
+.contact-box, .about-box {
     width: 90%;
     background: #35312B;
     min-height: 40vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-}
-.contact-box p {
-    padding-top: 1.9rem;
+    padding: 2rem;
 }
 .contact-box h2 {
     padding-top: 0.4rem;
@@ -370,6 +368,22 @@ input:focus, textarea::focus {
 }
 textarea {
     min-height: 150px;
+}
+.about-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0E0E0E;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    overflow: hidden;
+}
+.about-box img {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
 }
 
 /* Responsive Padding */
