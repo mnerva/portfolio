@@ -7,7 +7,8 @@
     <meta name="author" content="Your Name">
     <title>Index</title>
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="./style/style.css">
+     <!--https://monareaita22.ikt.khk.ee/portfolio/style.css-->
+    <link rel="stylesheet" href="https://monareaita22.ikt.khk.ee/portfolio/style.css">
     <link rel="stylesheet" media="screen and (max-width: 500px)" href="./style/mobile.css">
 </head>
 <body>
@@ -15,19 +16,18 @@
         <!-- navigation -->
         <nav class="navbar">
             <ul class="nav-list">
-                <li class="logo"><a href="index.html" class="logo">mona.</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <!--<li><a href="courses.html">COURSES</a></li>-->
-                <li><a href="contact.html">CONTACT</a></li>
-                <li class="contact-button"><a href="contact.html" class="contact-button">CONTACT</a></li>
+                <li class="logo"><a href="https://monareaita22.ikt.khk.ee/portfolio/index.html" class="logo">mona.</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="contact-button"><a href="#contact" class="contact-button">CONTACT</a></li>
                 <li class="dropdown">
                     <button class="dropdown-button">☰</button>
                     <ul class="dropdown-menu">
-                        <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#about">ABOUT</a></li>
                         <!--<li><a href="courses.html">COURSES</a></li>-->
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,46 +43,58 @@
         </section>
         <section class="projects" id="projects">
             <div class="projects-text">
-                <h2>My projects</h2>
-                <a href="projects.html" class="cta">All projects</a>
+                <h2 style="padding-top: 3rem;">My projects</h2>
             </div>
             <div class="box-grid">
                 <div class="box">
-                    <div class="box-overlay">
-                        <span>Web design</span>
-                        <span>first</span>
+                    <div class="content">
+                        <div class="box-overlay">
+                            <h2>Task Management Website</h2>
+                        </div>
+                        <p>Developed a website that helps to track daily tasks efficiently.</p>
+                        <p>Stack: <b>Node.js, MySQL, JS</b></p>
+                    </div>
+                    <img src="./IMG_4976.jpeg" alt="Task Management website image">
+                </div>
+                <div class="box">
+                    <img src="./IMG_4977.jpeg" alt="Task Management website image">
+                    <div class="content">
+                        <div class="box-overlay">
+                            <h2>SoundGate - AI-Powered Music Recommender</h2>
+                        </div>
+                        <p>A mobile app currently under development that provides users with personalized music recommendations based on their likes.</p>
+                        <p>Stack: <b>React Native, TypeScript, Swift, Kotlin</b></p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="box-overlay">
-                        <span>Web design</span>
-                        <span>second</span>
+                    <div class="content">
+                        <div class="box-overlay">
+                            <h2>VOCO IT-Academy Website</h2>
+                        </div>
+                        <p>Currently developing an accessible <b>website for VOCO</b> to provide information about the IT school for students, teachers, and prospective students. The project is a collaboration between <b>four developers and four UX/UI designers</b>, ensuring both functionality and user-friendly design. As the <b>Project Manager</b> and <b>Back-End Developer</b>, I manage the team work while working with the server-side development. </p>
+                        <p>Stack: <b>React, TailwindCSS, Express.js, Node.js, Jest</b></p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="text">
                     <h2>About me</h2>
-                    <p>Hi! I'm Mona Nerva - an 18-year-old software development student at Tartu Vocational College. I’ve been learning coding for 3 years. I really enjoy both backend and frontend, so I would love to work as a full-stack developer. </p>
-                    <a href="about.html" class="cta">read more</a>
+                    <p>Hi! I'm Mona Nerva - an 18-year-old software development student at Tartu Vocational College. I’ve been learning software development for about three years now. With every project I work on, the more I engage in development, and the more my passion for it grows.</p>
+                    <div class="extra-text" id="extra-text" style="display: none;">
+                        <p>Beyond coding, I enjoy music, reading, engaging in charity work and staying active through sports. I've been involved in music for as long as I can remember. </p>
+                    </div>
+                    <a class="cta" id="read-more" onclick="showMore()">read more</a>
                 </div>
                 <img src="./IMG_4975.jpeg" alt="About me image" class="about-image">
             </div>
         </section>
-        <div class="marquee-container">
-            <div class="marquee">
-              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
-              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
-              <span>LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++ LET'S TALK +++</span>
-            </div>
-        </div>
-        <section class="touch">
+        <section class="touch" id="contact">
             <p>Project in hand?</p>
             <h1>Let's get in touch!</h1>
-            <p>plaplalpalpalplaplpla</p>
-            <a href="contact.html" class="cta">Get in touch</a>
+            <p>Phone - <b>+372 5300 1570</b></p>
+            <p>Email - <b>monanerva@gmail.com</b></p>
         </section>
     </main>
     <script>
@@ -107,6 +119,11 @@
 
         document.addEventListener('click', closeDropdown);
         document.addEventListener('touchstart', closeDropdown);
+    
+        function showMore() {
+            document.getElementById("extra-text").style.display = "block";
+            document.getElementById("read-more").style.display = "none"
+        }
     </script>
 </body>
 </html>
