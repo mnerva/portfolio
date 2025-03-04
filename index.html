@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A basic HTML template">
-    <meta name="author" content="Your Name">
-    <title>Index</title>
+    <meta name="author" content="Mona">
+    <title>Portfolio</title>
     <!-- Link to CSS -->
      <!--https://monareaita22.ikt.khk.ee/portfolio/style.css-->
     <link rel="stylesheet" href="https://monareaita22.ikt.khk.ee/portfolio/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./style/mobile.css">
 </head>
 <body>
     <header>
@@ -17,17 +16,17 @@
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="logo"><a href="https://monareaita22.ikt.khk.ee/portfolio/index.html" class="logo">mona.</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
                 <li class="contact-button"><a href="#contact" class="contact-button">CONTACT</a></li>
                 <li class="dropdown">
                     <button class="dropdown-button">☰</button>
                     <ul class="dropdown-menu">
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                        <li><a href="#about" class="nav-link">ABOUT</a></li>
                         <!--<li><a href="courses.html">COURSES</a></li>-->
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,30 +48,45 @@
                 <div class="box">
                     <div class="content">
                         <div class="box-overlay">
-                            <h2>Task Management Website</h2>
+                            <h2>VOCO IT-Academy Website</h2>
                         </div>
-                        <p>Developed a website that helps to track daily tasks efficiently.</p>
-                        <p>Stack: <b>Node.js, MySQL, JS</b></p>
+                        <p>Currently developing an accessible <b>website for VOCO</b> to provide information about the IT school for students, teachers, and prospective students. The project is a collaboration between <b>four developers and four UX/UI designers</b>. As the <b>Project Manager</b> and <b>Back-End Developer</b>, I manage the team work while working with the server-side development. </p>
+                        <p>Stack: <b>React, TailwindCSS, Express.js, Node.js, Jest</b></p>
+                        <p class="github">Github repo: <a href="https://github.com/askoke/IT-Akadeemia-leht" target="_blank" rel="noopener noreferrer">Project github</a></p>
                     </div>
-                    <img src="./IMG_4976.jpeg" alt="Task Management website image">
+                    <img src="./IMG_4978.jpeg" alt="IT-Academy website image">
                 </div>
                 <div class="box">
-                    <img src="./IMG_4977.jpeg" alt="Task Management website image">
+                    <img src="./IMG_4977.jpeg" alt="Music Recommender website image">
                     <div class="content">
                         <div class="box-overlay">
                             <h2>SoundGate - AI-Powered Music Recommender</h2>
                         </div>
                         <p>A mobile app currently under development that provides users with personalized music recommendations based on their likes.</p>
                         <p>Stack: <b>React Native, TypeScript, Swift, Kotlin</b></p>
+                        <p class="github">Github repo: <a href="https://github.com/mnerva" target="_blank" rel="noopener noreferrer">Link coming soon</a></p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="content">
                         <div class="box-overlay">
-                            <h2>VOCO IT-Academy Website</h2>
+                            <h2>Task Management Website</h2>
                         </div>
-                        <p>Currently developing an accessible <b>website for VOCO</b> to provide information about the IT school for students, teachers, and prospective students. The project is a collaboration between <b>four developers and four UX/UI designers</b>, ensuring both functionality and user-friendly design. As the <b>Project Manager</b> and <b>Back-End Developer</b>, I manage the team work while working with the server-side development. </p>
-                        <p>Stack: <b>React, TailwindCSS, Express.js, Node.js, Jest</b></p>
+                        <p>Developed a website that helps to track daily tasks efficiently. In this project I focused mainly on the database side.</p>
+                        <p>Stack: <b>Node.js, MySQL, JS</b></p>
+                        <p class="github">Github repo: <a href="https://github.com/mnerva/application" target="_blank" rel="noopener noreferrer">Project github</a></p>
+                    </div>
+                    <img src="./IMG_4976.jpeg" alt="Task Management website image">
+                </div>
+                <div class="box">
+                    <img src="./IMG_4979.jpeg" alt="Web Store image">
+                    <div class="content">
+                        <div class="box-overlay">
+                            <h2>Web Store</h2>
+                        </div>
+                        <p>As a team, we developed a surfboard online store. I was the project manager and front-end, back-end developer.</p>
+                        <p>Stack: <b>Node.js, MySQL, JS</b></p>
+                        <p class="github">Github repo: <a href="https://github.com/mnerva/veebipood" target="_blank" rel="noopener noreferrer">Project github</a></p>
                     </div>
                 </div>
             </div>
@@ -81,9 +95,11 @@
             <div class="container">
                 <div class="text">
                     <h2>About me</h2>
-                    <p>Hi! I'm Mona Nerva - an 18-year-old software development student at Tartu Vocational College. I’ve been learning software development for about three years now. With every project I work on, the more I engage in development, and the more my passion for it grows.</p>
+                    <p>Hi! I'm <b>Mona Nerva</b> - an 18-year-old <b>software development student</b> at Tartu Vocational College. I’ve been learning software development for about <b>three years</b> now. With every project I work on, the more I engage in development, and the more my passion for it grows.</p>
                     <div class="extra-text" id="extra-text" style="display: none;">
-                        <p>Beyond coding, I enjoy music, reading, engaging in charity work and staying active through sports. I've been involved in music for as long as I can remember. </p>
+                        <p>Beyond coding, I am deeply involved in <b>music</b>. I studied piano for eight years in music school, have been playing guitar for a couple of years, and have been singing for as long as I can remember. 
+                            I also enjoy <b>reading</b>, especially psychology books. I find the subject fascinating, so I always keep one in progress for my free time. 
+                            When it comes to <b>physical activity</b>, I love staying active. Running, tennis, basketball, and going to the gym are some of my favorite ways to move.</p>
                     </div>
                     <a class="cta" id="read-more" onclick="showMore()">read more</a>
                 </div>
@@ -94,13 +110,16 @@
             <p>Project in hand?</p>
             <h1>Let's get in touch!</h1>
             <p>Phone - <b>+372 5300 1570</b></p>
-            <p>Email - <b>monanerva@gmail.com</b></p>
+            <p>Personal email - <b>monanerva@gmail.com</b></p>
+            <p>School email - <b>mona-rea.nerva@voco.ee</b></p>
+            <p class="github">Github - <a href="https://github.com/mnerva" target="_blank" rel="noopener noreferrer">Check out my Github!</a></p>
         </section>
     </main>
     <script>
         // Select the dropdown button and the dropdown menu
         const dropdownButton = document.querySelector('.dropdown-button');
         const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
 
         // Toggle the dropdown menu visibility on button click
         dropdownButton.addEventListener('click', (event) => {
@@ -112,10 +131,36 @@
             dropdownMenu.style.display = currentDisplay === 'flex' ? 'none' : 'flex';
         });
 
+        // Close the dropdown and ensure smooth scrolling when a link is clicked
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    // Scroll smoothly to the target section
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // Hide the dropdown menu after clicking a link
+                dropdownMenu.style.display = 'none';
+                
+            });
+        });
+
         // Close the dropdown if clicked or touched outside
         const closeDropdown = () => {
             dropdownMenu.style.display = 'none'; // Close dropdown if click or touch outside
         };
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
 
         document.addEventListener('click', closeDropdown);
         document.addEventListener('touchstart', closeDropdown);
@@ -124,6 +169,29 @@
             document.getElementById("extra-text").style.display = "block";
             document.getElementById("read-more").style.display = "none"
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            function updateActiveLink() {
+                let scrollPosition = window.scrollY + window.innerHeight / 3;
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.clientHeight;
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        navLinks.forEach((link) => link.classList.remove("active"));
+                        document.querySelector(`.nav-link[href="#${section.id}"]`)?.classList.add("active");
+                    }
+                });
+            }
+
+        window.addEventListener("scroll", updateActiveLink);
+        updateActiveLink(); // Run on page load
+        });
+
     </script>
 </body>
 </html>
