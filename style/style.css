@@ -440,7 +440,7 @@ textarea {
         width: 90%;
         padding: 20px 28px 20px;
     }
-    .nav-list > li:not(.contact-button):not(.dropdown):not(.logo) {
+    .nav-list > li:not(.contact-button):not(.logo) {
         display: none; /* Hide all except the contact button and dropdown */
     }
     .nav-list li {
