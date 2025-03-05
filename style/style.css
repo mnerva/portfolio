@@ -64,7 +64,7 @@ h2 {
 
 .nav-list .contact-button {
     position: absolute;
-    right: 40px;
+    right: 20px;
     top: 50%;
     margin-right: auto;
     transform: translateY(-50%);
@@ -434,13 +434,31 @@ textarea {
 }
 
 /* Responsive Padding */
+@media screen and (max-width: 940px) {
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0.4rem;
+    }
+    
+    .contact-button {
+        margin-left: auto;
+    }
+    
+    .dropdown {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
 @media (max-width: 941px) {
     .navbar {
         top: 17px;
         width: 90%;
         padding: 20px 28px 20px;
     }
-    .nav-list > li:not(.contact-button):not(.logo) {
+    .nav-list > li:not(.contact-button):not(.dropdown):not(.logo) {
         display: none; /* Hide all except the contact button and dropdown */
     }
     .nav-list li {
