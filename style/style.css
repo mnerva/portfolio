@@ -72,6 +72,9 @@ h2 {
 .nav-list .logo {
     margin-left: auto;
 }
+.nav-list .logo a {
+    padding: 0px;
+}
 .nav-link {
     position: relative;
     text-decoration: none;
@@ -444,10 +447,6 @@ textarea {
     
     .contact-button {
         margin-left: auto;
-    }
-
-    .logo {
-        padding-top: 4px;
     }
     
     .dropdown {
