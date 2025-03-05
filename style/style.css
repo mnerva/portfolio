@@ -445,6 +445,10 @@ textarea {
     .contact-button {
         margin-left: auto;
     }
+
+    .logo {
+        padding-top: 4px;
+    }
     
     .dropdown {
         visibility: hidden;
