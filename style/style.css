@@ -435,16 +435,7 @@ textarea {
 }
 
 /* Responsive Padding */
-@media screen and (max-width: 940px) {
-    .nav-list {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0.4rem;
-    }
-    .nav-list .logo a {
-        padding: 0px;
-    }
+@media (max-width: 941px) {
     .contact-button {
         margin-left: auto;
     }
@@ -453,9 +444,6 @@ textarea {
         visibility: hidden;
         position: absolute;
     }
-}
-
-@media (max-width: 941px) {
     .navbar {
         top: 17px;
         width: 90%;
@@ -463,6 +451,12 @@ textarea {
     }
     .nav-list > li:not(.contact-button):not(.dropdown):not(.logo) {
         display: none; /* Hide all except the contact button and dropdown */
+    }
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0.4rem;
     }
     .nav-list li {
         float: right;
@@ -473,6 +467,9 @@ textarea {
     }    
     .nav-list .logo {
         transform: translateY(-5%);
+    }
+    .nav-list .logo a {
+        padding: 0px;
     }
     .dropdown-button {
         transform: translateY(-10%);
